@@ -32,6 +32,9 @@
         <link rel="stylesheet" href="asset/css/owl.carousel.css" type="text/css">
         <link rel="stylesheet" href="asset/css/owl.theme.css" type="text/css">
         <link rel="stylesheet" href="asset/css/owl.transitions.css" type="text/css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         
         <!-- Css3 Transitions Styles  -->
         <link rel="stylesheet" type="text/css" href="asset/css/animate.css">
@@ -45,9 +48,16 @@
         <!-- Responsive CSS Style -->
         <link rel="stylesheet" type="text/css" href="asset/css/responsive.css">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+        
+        
         <script src="asset/js/modernizrr.js"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
@@ -57,7 +67,7 @@
 
     <body>
     
-        <header class="clearfix">
+        <header id="main-header" class="clearfix">
         
             <!-- Start Top Bar -->
             <div class="container">
@@ -69,9 +79,9 @@
                                 <div class="col-md-6">
                                     <!-- Start Contact Info -->
                                     <ul class="contact-details">
-                                        <li><a href="#"><i class="fa fa-phone"></i> +12 345 678 000</a>
+                                        <li><a href="#"><i class="fa fa-phone"></i> +62 852-6554-1143 </a>
                                         </li>
-                                        <li><a href="#"><i class="fa fa-envelope-o"></i> support@sulfur.com</a>
+                                        <li><a href="#"><i class="fa fa-envelope-o"></i> ponpes.aswaja@dar.ac.id </a>
                                         </li> 
                                     </ul>
                                     <!-- End Contact Info -->
@@ -81,16 +91,16 @@
                                     <!-- Start Social Links -->
                                     <ul class="social-list">
                                         <li>
-                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                            <a href="https://www.instagram.com/ponpes_dar_aswaja_official?igsh=OHNsNmMzOTFxaDRz"><i class="fa fa-instagram"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="https://web.facebook.com/daraswaja.kuburohil/?_rdc=1&_rdr"><i class="fa fa-facebook"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-youtube"></i></a>
+                                            <a href="https://www.youtube.com/@ponpesdaraswajaofficial"><i class="fa fa-youtube"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-whatsapp"></i></a>
+                                            <a href="https://wa.me/+6285265541143"><i class="fa fa-whatsapp"></i></a>
                                         </li>
                                     </ul>
                                     <!-- End Social Links -->
@@ -130,15 +140,27 @@
                     <!-- Start Navigation List -->
                     <ul class="nav navbar-nav navbar-right">
                       <li><a class="active" href="index.html">Home</a></li>
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="service.html">Service</a></li>
-                      <li><a href="portfolio.html">Portfolio</a></li>
-                      <li>
+                      <li><a href="about.html">Profil Pondok</a>
+                        <ul class="dropdown">
+                            <li><a href="about.html#about-section">Sejarah Pondok</a></li>
+                            <li><a href="about.html#about-section-2">Visi & Misi</a></li>
+                            <li><a href="about.html#video-profil">Video Profil Pondok</a></li>
+                            <li><a href="about.html#team-section">Pembina & Administrasi</a></li>
+                        </ul>
+                    </li>
+                      <li><a href="service.html">Fasilitas</a></li>
+                      <li><a href="portfolio.html">Kegiatan</a>
+                        <ul class="dropdown">
+                            <li><a href="portfolio.html#putra">Santri Putra</a></li>
+                            <li><a href="portfolio.html#putri">Santri Putri</a></li>
+                        </ul>
+                    </li>
+                      <!-- <li>
                         <a href="blog.html">Blog</a>
                         <ul class="dropdown">
                           <li><a href="blog-item.html">Item Page</a></li>
                         </ul>
-                      </li>
+                      </li> -->
                       <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <!-- End Navigation List -->
@@ -232,67 +254,46 @@
 <!-- END SLIDER -->
         
         <!-- Start About Us Section -->
-    <section id="about-section" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title text-center wow fadeInDown" data-wow-duration="2s" data-wow-delay="50ms">
-                        <h2>About Us</h2>
-                    </div>                        
-                </div>
-            </div>
-            <div class="row">
-               <div class="col-md-5">
-                   <div class="about-img">
-                       <img src="asset/images/ust_usman.jpg" class="img-responsive" alt="About images">
-                       <div class="head-text">
-                           <p>pemimpin pondok Pesantren Dar Ahlussunnah Waljama'ah.</p>
-                           <span>Mudir Ma'had, UST. USAMAN SYAUFI.S.Ag,. M.Pd.I</span>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-7">
-                   <div class="about-text">
-                       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-                       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                   </div>
-                   
-                   <div class="about-list">
-                       <h4>Some important Feature</h4>
-                       <ul>
-                           <li><i class="fa fa-check-square"></i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</li>
-                           <li><i class="fa fa-check-square"></i>Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing.</li>
-                           <li><i class="fa fa-check-square"></i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan.</li>
-                           <li><i class="fa fa-check-square"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                           <li><i class="fa fa-check-square"></i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</li>
-                           <li><i class="fa fa-check-square"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                       </ul>
-                       
-                       <h4>More Feature</h4>
-                       <ul>
-                           <li><i class="fa fa-check-square"></i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</li>
-                           <li><i class="fa fa-check-square"></i>Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing.</li>
-                           <li><i class="fa fa-check-square"></i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan.</li>
-                           <li><i class="fa fa-check-square"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                       </ul>
-                   </div>
-                   
-               </div>
-                
-                
-                
-            </div>
-        </div>
-    </section>
-        
-        
-        <!-- Start Call to Action Section -->
-        <section class="call-to-action">
+        <section id="about-section" class="about-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 wow zoomIn" data-wow-duration="2s" data-wow-delay="300ms">
-                        <div><h1>علم وعمل وتعليم</h1></div>
-                        <p id="typing-text" data-text="Pondok Pesantren Dar Ahlussunnah Waljama'ah (Dar Aswaja) Sebagai pusat pengembangan dan pengamalan ilmu agama, penguatan aqidah Ahlussunnah Waljama'ah dan kebudayaan islam."></p>
+                    <div class="col-md-12">
+                        <div class="section-title text-center wow fadeInDown" data-wow-duration="2s" data-wow-delay="50ms">
+                            <h2>بِسْمِ اللّهِ الرَّحْمَنِ الرَّحِيْمِ</h2>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="about-img">
+                            <img src="asset/images/pondok/ust_usman.jpg" class="img-responsive" alt="About images">
+                            <div class="head-text">
+                                <p>pemimpin pondok Pesantren Dar Ahlussunnah Waljama'ah.</p>
+                                <span>Mudir Ma'had, UST. USAMAN SYAUFI.S.Ag,. M.Pd.I</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="about-text" style="text-align: justify;">
+                            <center><h3>ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ</h3><br></center>
+                            <p>Pendidikan yang menjadi inti dari Pondok Pesantren Dar Ahlussunah Wal Jama'ah (Dar Aswaja) berfokus pada lima aspek utama: ibadah, tholabul ilmu (menuntut ilmu), i'timad 'ala nafsi (kemandirian), kemasyarakatan, dan kemandirian. Dengan prinsip ini, kami berkomitmen untuk mencetak generasi yang berilmu, mengamalkan ilmunya, dan mampu mengajarkannya kepada orang lain.</p>
+                            <p>Arah pendidikan yang kami terapkan bertujuan untuk membentuk kerangka dasar yang kokoh bagi para santri, sehingga mereka dapat menjadi lulusan yang unggul dengan kulifikasi utama sebagai berikut: berilmu dan bertakwa, mengamalkan ilmu, mengajarkan kepada orang lain, cerdas dan bijaksana, mencintai ulama dan tanah air, serta memiliki akhlak yang mulia.</p>
+                            <p>Dengan kualifikasi ini, kami berharap setiap santri dan lulusan Pondok Pesantren Dar Aswaja tidak hanya mampu memahami perbedaan dalam berbagai pemikiran, aliran, maupun kelompok dengan bijaksana dan ilmiah, tetapi juga mampu menghindari jebakan faham yang sempit dan sesat. Pada akhirnya, kami menginginkan mereka menjadi pribadi yang berpredikat خَيْرُ النَّاسِ أَنْفَعُهُمْ لِلنَّاسِ - sebaik-baik manusia adalah yang paling bermanfaat bagi sesamanya, sehingga keberadaan mereka selalu memberikan manfaat positif bagi masyarakat di sekitarnya, dimanapun mereka berada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- Start Call to Action Section -->
+        <section class="call-to-action">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 wow zoomIn" data-wow-duration="2s" data-wow-delay="300ms">
+                            <div><h1>علم وعمل وتعليم</h1></div>
+                            <p id="typing-text" data-text="Pondok Pesantren Dar Ahlussunnah Waljama'ah (Dar Aswaja) Sebagai pusat pengembangan dan pengamalan ilmu agama, penguatan aqidah Ahlussunnah Waljama'ah dan kebudayaan islam."></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -304,7 +305,7 @@
         
         
         <!-- Start Team Member Section -->
-        <section id="team-section">
+<section id="team-section">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -313,26 +314,145 @@
                 </div>
             </div>
         </div>
-        <div class="image-scroll-container">
-            
+        <div class="tickerwrapper">
             <div class="image-scroll-wrapper">
                 <div class="team-member">
-                    <img src="asset/images/team/team-1.jpg" class="img-responsive" alt="John Doe">
+                    <img src="asset/images/dewan pengajar/ust mahbub.jpg" class="img-responsive" alt="Ustz. Abdul Kadir Mahbub, Lc">
                     <div class="team-details">
-                        <h4>John Doe</h4>
-                        <p>Founder & Director</p>
+                        <h4>Ust. Abdul Kadir Mahbub, Lc</h4>
+                        <p>Guru & Pembina Putra</p>
                         <ul>
-                            <li><a href="https://wa.me/082285220093"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="https://wa.me/+6282283907205"><i class="fa fa-whatsapp"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="asset/images/team/team-2.jpg" class="img-responsive" alt="John Doe">
+                    <img src="asset/images/muslim.png" class="img-responsive" alt="Ustz. Abdul Razak, S.Pd.I">
                     <div class="team-details">
-                        <h4>John Doe</h4>
-                        <p>Founder & Director</p>
+                        <h4>Ust. Abdul Razak, S.Pd.I</h4>
+                        <p>Guru & Kepala MA Dar Aswaja</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6285283321254"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/muslim.png" class="img-responsive" alt="Ustz. Ebruddin, S.Ag">
+                    <div class="team-details">
+                        <h4>Ust. Ebruddin, S.Ag</h4>
+                        <p>Guru & Bidang Keamanan</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6282266563367"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/muslim.png" class="img-responsive" alt="Ustz. Ibnu Mushonnip, S.Pd.I">
+                    <div class="team-details">
+                        <h4>Ust. Ibnu Mushonnip, S.Pd.I</h4>
+                        <p>Guru & Pembina Putri</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6282287434417"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/dewan pengajar/ust. alwi.jpg" class="img-responsive" alt="Ustz. Muhammad Alawi Nst, Lc">
+                    <div class="team-details">
+                        <h4>Ust. Muhammad Alawi Nst, Lc</h4>
+                        <p>Guru & Pembina Putri</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6282310496586"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/muslim.png" class="img-responsive" alt="Ustz. Puja Kelana">
+                    <div class="team-details">
+                        <h4>Ust. Puja Kelana</h4>
+                        <p>Guru & Bidang Kebersihan</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6282261361457"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/dewan pengajar/utz arif'an.jpg" class="img-responsive" alt="Ustz. A. Rif'an">
+                    <div class="team-details">
+                        <h4>Ust. A. Rif'an</h4>
+                        <p>Guru & Qism Tarbiyah</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6282252868053"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/dewan pengajar/ust tamrin.png" class="img-responsive" alt="Ustz. Tamrin, SHI, M.Pd.I">
+                    <div class="team-details">
+                        <h4>Ust. Tamrin, SHI, M.Pd.I</h4>
+                        <p>Guru</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6285274738887"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/pondok/zulkhoiri.jpg" class="img-responsive" alt="Ustz. Zulkhairi">
+                    <div class="team-details">
+                        <h4>Ust. Zulkhairi</h4>
+                        <p>Guru & Bidang Keamanan</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6282211533172"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="https://www.instagram.com/al_khoir_wa_salwa"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://web.facebook.com/zulkhairi.allahwajalah"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/dewan pengajar/kak dalil.jpg" class="img-responsive" alt="Ustzh. Dalilan Aini, S.Ag">
+                    <div class="team-details">
+                        <h4>Ustzh. Dalilan Aini, S.Ag</h4>
+                        <p>Guru & Qism Tarbiyah</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6282285526424"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="https://www.instagram.com/dalilanelkheiri?igsh=Y2t2anBtbzNwY251"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/dewan pengajar/fatimah.jpg" class="img-responsive" alt="Ustzh. Fatimah">
+                    <div class="team-details">
+                        <h4>Ustzh. Fatimah</h4>
+                        <p>Guru</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6282215526866"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/dewan pengajar/lia sasmita.jpg" class="img-responsive" alt="Ustzh. Lia Sasmita">
+                    <div class="team-details">
+                        <h4>Ustzh. Lia Sasmita</h4>
+                        <p>Guru</p>
                         <ul>
                             <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
@@ -341,10 +461,70 @@
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="asset/images/team/team-3.jpg" class="img-responsive" alt="John Doe">
+                    <img src="asset/images/dewan pengajar/ummik.jpg" class="img-responsive" alt="Ustzh. Nur Halimah, S.Pd.I">
                     <div class="team-details">
-                        <h4>John Doe</h4>
-                        <p>Founder & Director</p>
+                        <h4>Ustzh. Nur Halimah, S.Pd.I</h4>
+                        <p>Guru</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6282298002156"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/dewan pengajar/siti Aisyah.jpg" class="img-responsive" alt="Ustzh. Siti Aisyah, S.Pd.I">
+                    <div class="team-details">
+                        <h4>Ustzh. Siti Aisyah, S.Pd.I</h4>
+                        <p>Guru</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6285219557112"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/muslim.png" class="img-responsive" alt="Ust. Iswahyudi, S.Pd">
+                    <div class="team-details">
+                        <h4>Ust. Iswahyudi, S.Pd</h4>
+                        <p>Ka. Tata Usaha</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6285265541143"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/dewan pengajar/Rina.jpg" class="img-responsive" alt="Ibu Rina Astuti, S.E">
+                    <div class="team-details">
+                        <h4>Ibu Rina Astuti, S.E</h4>
+                        <p>Staf Tata Usaha Putri</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6285322988275"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/dewan pengajar/rio.jpg" class="img-responsive" alt="Rio Saputra">
+                    <div class="team-details">
+                        <h4>Rio Saputra</h4>
+                        <p>Staf Tata Usaha Putri</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6282288929237"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/muslimah.png" class="img-responsive" alt="Ustzh. Suhaila, S.Ag">
+                    <div class="team-details">
+                        <h4>Ustzh. Suhaila, S.Ag</h4>
+                        <p>Guru</p>
                         <ul>
                             <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
@@ -353,24 +533,10 @@
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="asset/images/team/team-4.jpg" class="img-responsive" alt="John Doe">
+                    <img src="asset/images/muslimah.png" class="img-responsive" alt="Ustzh. Khoirotunnisak, S.Pd">
                     <div class="team-details">
-                        <h4>John Doe</h4>
-                        <p>Founder & Director</p>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Duplicate team members for continuous scrolling effect -->
-                <div class="team-member">
-                    <img src="asset/images/team/team-1.jpg" class="img-responsive" alt="John Doe">
-                    <div class="team-details">
-                        <h4>John Doe</h4>
-                        <p>Founder & Director</p>
+                        <h4>Ustzh. Khoirotunnisak, S.Pd</h4>
+                        <p>Guru & Pembina Putri</p>
                         <ul>
                             <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
@@ -379,36 +545,72 @@
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="asset/images/team/team-2.jpg" class="img-responsive" alt="John Doe">
+                    <img src="asset/images/muslim.png" class="img-responsive" alt="Aunil Harits, S.Pd">
                     <div class="team-details">
-                        <h4>John Doe</h4>
-                        <p>Founder & Director</p>
+                        <h4>Aunil Harits, S.Pd</h4>
+                        <p>BMT Putri</p>
                         <ul>
-                            <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="https://wa.me/+6282165311490"><i class="fa fa-whatsapp"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="asset/images/team/team-3.jpg" class="img-responsive" alt="John Doe">
+                    <img src="asset/images/muslim.png" class="img-responsive" alt="Ust. Taufik Qurozi, S.Pd">
                     <div class="team-details">
-                        <h4>John Doe</h4>
-                        <p>Founder & Director</p>
+                        <h4>Ust. Taufik Qurozi, S.Pd</h4>
+                        <p>Guru & Pembina Putra</p>
                         <ul>
-                            <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="https://wa.me/+6281247027416"><i class="fa fa-whatsapp"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="asset/images/team/team-4.jpg" class="img-responsive" alt="John Doe">
+                    <img src="asset/images/dewan pengajar/ust ni'am.jpg" class="img-responsive" alt="Ust. Khabibun Ni'am">
                     <div class="team-details">
-                        <h4>John Doe</h4>
-                        <p>Founder & Director</p>
+                        <h4>Ust. Khabibun Ni'am</h4>
+                        <p>Guru & Pembina Putra</p>
                         <ul>
-                            <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="https://wa.me/+6282223048297"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/dewan pengajar/Trio Antika.jpg"class="img-responsive" alt="Ustzh. Trio Antika">
+                    <div class="team-details">
+                        <h4>Ustzh. Trio Antika</h4>
+                        <p>Guru & Pembina Tahfidz</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6281311350297"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/dewan pengajar/Nur Hinayah.jpg" class="img-responsive" alt="Ustzh. Nurhaniyah">
+                    <div class="team-details">
+                        <h4>Ustzh. Nurhaniyah</h4>
+                        <p>Guru</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6282316519336"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="asset/images/dewan pengajar/Beti.jpg" class="img-responsive" alt="Ustzh. Betti Setiawati">
+                    <div class="team-details">
+                        <h4>Ustzh. Betti Setiawati</h4>
+                        <p>Guru</p>
+                        <ul>
+                            <li><a href="https://wa.me/+6282274783010"><i class="fa fa-whatsapp"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         </ul>
@@ -431,7 +633,8 @@
                     <div class="col-md-12">
                         <div class="section-title text-center wow fadeInDown" data-wow-duration="2s" data-wow-delay="50ms">
                             <h2>Portfolio Kegiatan santri</h2>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                            <p>
+                                Portofolio kegiatan santri di Pondok Pesantren Dar Aswaja mencakup berbagai aktivitas yang bertujuan untuk mengembangkan kemampuan akademik, spiritual, serta keterampilan praktis santri.</p>
                         </div>                        
                     </div>
                 </div>
@@ -442,67 +645,67 @@
                         <ul id="portfolio-list">
                             <li class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="300ms">
                                 <div class="portfolio-item">
-                                    <img src="asset/images/portfolio/img1.jpg" class="img-responsive" alt="" />
+                                    <img src="asset/images/portfolio/kegiatan1.jpg" class="img-responsive" alt="" />
                                     <div class="portfolio-caption">
-                                        <h4>Portfolio Title</h4>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                                        <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                        <a href="#" class="link-2"><i class="fa fa-link"></i></a>
+                                        <h4>Tablig Akbar</h4>
+                                        <p>"Halaqoh Ulama Nahdiyyin dan Ijazahan Thoriqoh Rifa'iyyah Serta Tabbruk Rambut Rasulullah SAW"</p>
+                                        <!-- <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+                                        <a href="#" class="link-2"><i class="fa fa-link"></i></a> -->
                                     </div>
                                 </div>
                             </li>
                             <li class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="600ms">
                                 <div class="portfolio-item">
-                                    <img src="asset/images/portfolio/img2.jpg" class="img-responsive" alt="" />
+                                    <img src="asset/images/portfolio/kegiatan2.jpg" class="img-responsive" alt="" />
                                     <div class="portfolio-caption">
-                                        <h4>Portfolio Title</h4>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                                        <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                        <a href="#" class="link-2"><i class="fa fa-link"></i></a>
+                                        <h4>Maulid</h4>
+                                        <p>"Setiap Malam Jum'at, Santri Bersama Menghidupkan Suasana Dengan Lantunan Sholawat, Doa, dan Zikir Untuk Memperingati Maulid Nabi Muhammad SAW"</p>
+                                        <!-- <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+                                        <a href="#" class="link-2"><i class="fa fa-link"></i></a> -->
                                     </div>
                                 </div>
                             </li>
                             <li class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="900ms">
                                 <div class="portfolio-item">
-                                    <img src="asset/images/portfolio/img3.jpg" class="img-responsive" alt="" />
+                                    <img src="asset/images/portfolio/kegiatan4.jpg" class="img-responsive" alt="" />
                                     <div class="portfolio-caption">
-                                        <h4>Portfolio Title</h4>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                                        <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                        <a href="#" class="link-2"><i class="fa fa-link"></i></a>
+                                         <h4>Acara 17-an</h4>
+                                        <p>"Setiap Tanggal 17 Agustus Santri melalukan berbagai perlombaan seperti balap karung, panjang pinang, tarik tambang dan lain sebagainya"</p>
+                                        <!-- <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+                                        <a href="#" class="link-2"><i class="fa fa-link"></i></a> -->
                                     </div>
                                 </div>
                             </li>
                             <li class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1200ms">
                                 <div class="portfolio-item">
-                                    <img src="asset/images/portfolio/img4.jpg" class="img-responsive" alt="" />
+                                    <img src="asset/images/portfolio/kegiatan putri1.jpg" class="img-responsive" alt="" />
                                     <div class="portfolio-caption">
-                                        <h4>Portfolio Title</h4>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                                        <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                        <a href="#" class="link-2"><i class="fa fa-link"></i></a>
+                                        <h4>Muhadhoroh</h4>
+                                        <p>"Santri Akan Dilatih Ceramah Dengan Dua Bahasa (Indonesia dan 'Arab) Untuk Tampil Percaya Diri dan Maju di Hadapan Santri lainnya, Sehingga Mental Dakwah Mereka Sudah Terbentuk Sejak Dini"</p>
+                                        <!-- <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+                                        <a href="#" class="link-2"><i class="fa fa-link"></i></a> -->
                                     </div>
                                 </div>
                             </li>
                             <li class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1500ms">
                                 <div class="portfolio-item">
-                                    <img src="asset/images/portfolio/img5.jpg" class="img-responsive" alt="" />
+                                    <img src="asset/images/portfolio/kegiatan putri2.jpg" class="img-responsive" alt="" />
                                     <div class="portfolio-caption">
-                                        <h4>Portfolio Title</h4>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                                        <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                        <a href="#" class="link-2"><i class="fa fa-link"></i></a>
+                                        <h4>Baca Yasin</h4>
+                                        <p>"Santri Putri Membaca Yasin Secara Berjama'ah dan Do'a Bersama"</p>
+                                        <!-- <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+                                        <a href="#" class="link-2"><i class="fa fa-link"></i></a> -->
                                     </div>
                                 </div>
                             </li>
                             <li class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1800ms">
                                 <div class="portfolio-item">
-                                    <img src="asset/images/portfolio/img6.jpg" class="img-responsive" alt="" />
+                                    <img src="asset/images/portfolio/kegiatan putri3.jpg" class="img-responsive" alt="" />
                                     <div class="portfolio-caption">
-                                        <h4>Portfolio Title</h4>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                                        <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                        <a href="#" class="link-2"><i class="fa fa-link"></i></a>
+                                        <h4>Acara 17</h4>
+                                        <p>"Santri Putri Melakukan Upacara Dalam Rangka Memperingati Hari Kemerdekaan Indonesia"</p>
+                                        <!-- <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
+                                        <a href="#" class="link-2"><i class="fa fa-link"></i></a> -->
                                     </div>
                                 </div>
                             </li>
@@ -530,79 +733,79 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="services-post">
-				            <a href="#"><i class="fa fa-skyatlas"></i></a>
+				            <a href="#"><i class="fa fa-building"></i></a>
 				            <h2>GEDUNG BELAJAR 2 LANTAI</h2>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+							<p>Gedung ini menyediakan ruang kelas yang nyaman untuk kegiatan belajar mengajar dengan dua lantai. </p>
 				        </div>
                     </div>
                     <div class="col-md-3">
                         <div class="services-post">
-				            <a href="#"><i class="fa fa-magic"></i></a>
+				            <a href="#"><i class="fa fa-bed"></i></a>
 				            <h2>ASRAMA PUTRA/PUTRI</h2>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+							<p>Fasilitas asrama yang menjadi tempat tinggal bagi santri putra dan putri. </p>
 				        </div>
                     </div>
                     <div class="col-md-3">
                         <div class="services-post">
-				            <a href="#"><i class="fa fa-gift"></i></a>
+				            <a href="#"><i class="fa fa-book"></i></a>
 				            <h2>PERPUSTAKAAN</h2>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+							<p>Menyediakan berbagai bahan bacaan untuk mendukung proses belajar santri. </p>
 				        </div>
                     </div>
                     <div class="col-md-3">
                         <div class="services-post">
-				            <a href="#"><i class="fa fa-diamond"></i></a>
+				            <a href="#"><i class="fa fa-desktop"></i></a>
 				            <h2>LABORATORIUM KOMPUTER</h2>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+							<p>Fasilitas lab komputer yang mendukung pembelajaran teknologi Komputer. </p>
 				        </div>
                     </div>
                     <div class="col-md-3">
                         <div class="services-post">
-				            <a href="#"><i class="fa fa-wordpress"></i></a>
+				            <a href="#"><i class="fa fa-futbol-o"></i></a>
 				            <h2>LAPANGAN OLAHRAGA</h2>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+							<p>Area terbuka untuk kegiatan olahraga, seperti sepak bola dan aktivitas fisik lainnya. </p>
 				        </div>
                     </div>
                     <div class="col-md-3">
                         <div class="services-post">
-				            <a href="#"><i class="fa fa-forumbee"></i></a>
+				            <a href="#"><i class="fa fa-tools"></i></a>
 				            <h2>BALAI LATIHAN KERJA KOMUNITAS</h2>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+							<p>Fasilitas pelatihan keterampilan yang mendukung pengembangan kemampuan kerja. </p>
 				        </div>
                     </div>
                     <div class="col-md-3">
                         <div class="services-post">
-				            <a href="#"><i class="fa fa-bicycle"></i></a>
+				            <a href="#"><i class="fa fa-mosque"></i></a>
 				            <h2>MASJID/MUSHOLLA</h2>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+							<p>Tempat ibadah untuk melaksanakan shalat dan kegiatan-kegiatan santri yang lainnya. </p>
 				        </div>
                     </div>
                     <div class="col-md-3">
                         <div class="services-post">
-				            <a href="#"><i class="fa fa-foursquare"></i></a>
+				            <a href="#"><i class="fa fa-chalkboard"></i></a>
 				            <h2>AULA</h2>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+							<p>Ruang serbaguna yang digunakan untuk acara besar, seperti pertemuan dan seminar. </p>
 				        </div>
                     </div>
                     <div class="col-md-3">
                         <div class="services-post">
-				            <a href="#"><i class="fa fa-foursquare"></i></a>
+				            <a href="#"><i class="fa fa-shopping-basket"></i></a>
 				            <h2>KOPERASI PONDOK</h2>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+							<p>Tempat yang menyediakan kebutuhan sehari-hari bagi santri. </p>
 				        </div>
                     </div>
                     <div class="col-md-3">
                         <div class="services-post">
-				            <a href="#"><i class="fa fa-foursquare"></i></a>
+				            <a href="#"><i class="fa fa fa-store"></i></a>
 				            <h2>PUSAT PEMBELANJAAN ASWAJA STORE</h2>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+							<p> Toko di lingkungan pesantren yang menyediakan berbagai barang keperluan. </p>
 				        </div>
                     </div>
                     <div class="col-md-3">
                         <div class="services-post">
-				            <a href="#"><i class="fa fa-foursquare"></i></a>
+				            <a href="#"><i class="fa fa-concierge-bell"></i></a>
 				            <h2>KANTIN/ DAPUR UMUM</h2>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+							<p> Fasilitas penyediaan makanan dan minuman bagi santri. </p>
 				        </div>
                     </div>
                 </div>
@@ -679,22 +882,21 @@
                     <div class="col-md-3">
                         <div class="section-heading-2">
                             <h3 class="section-title">
-                                <span>Address</span>
+                                <span>Kontak Pondok</span>
                             </h3>
                         </div>
                         
                         <div class="footer-address">
                             <ul>
-                                <li class="footer-contact"><i class="fa fa-home"></i>123, Second Street name, Address</li>
-                                <li class="footer-contact"><i class="fa fa-envelope"></i><a href="#">info@domain.com</a></li>
-                                <li class="footer-contact"><i class="fa fa-phone"></i>+1 (123) 456-7890</li>
-                                <li class="footer-contact"><i class="fa fa-globe"></i><a href="#" target="_blank">www.domain.com</a></li>
+                                <li class="footer-contact"><i class="fa fa-home"></i>Jl. Ibadah Syeikh Muda Madlawan Sungai Pinang, Kec. Kubu Babussalam, Kab. Rokan Hilir, Riau 28991</li>
+                                <li class="footer-contact"><i class="fa fa-envelope"></i><a href="#">ponpes.aswaja@dar.ac.id</a></li>
+                                <li class="footer-contact"><i class="fa fa-phone"></i>+62 852-6554-1143</li>
+                                <!-- <li class="footer-contact"><i class="fa fa-globe"></i><a href="#" target="_blank">www.domain.com</a></li> -->
                             </ul>
                         </div>
                     </div><!--/.col-md-3 -->
-                    
-                    
-                    <div class="col-md-3">
+        
+                    <div class="col-md-4">
                         <div class="section-heading-2">
                             <h3 class="section-title">
                                 <span>Lokasi Pondok DAR ASWAjA</span>
@@ -704,100 +906,94 @@
                         <div class="latest-tweet">
                             <div class="media">
                                 <div class="media-left">
-                                    <i class="fa fa-twitter fa-2x media-object"></i>
+                                    <img src="asset/images/map.png" height="42" width="42" alt="Metronic FrontEnd" class="logo-image1">
                                 </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">About 15 days ago</h4>
-                                    <p>Finally #tutsplus start a tutorial on A Beginner’s Guide to Using #joomla . Check it out here http://t.co/i6S4zeW8Z0</p>
+                                <div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38055.17121514386!2d100.61991589415744!3d2.0593606317322926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d2cb165fd57237%3A0x27d449cf2499ed4e!2sPondok%20Pesantren%20Dar%20Aswaja!5e0!3m2!1sid!2sid!4v1723721991837!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
                         </div>
-                    </div><!--/.col-md-3 -->
-                    
-                    <div class="col-md-3">
-                        <!-- <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>Stay With us</span>
-                            </h3>
-                        </div>
-                        <div class="subscription">
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your E-mail" id="name" required data-validation-required-message="Please enter your name.">
-                                <input type="submit" class="btn btn-primary" value="Subscribe">
-                            </div>
-                        </div> -->
-                    </div>
-                    
-                    <div class="col-md-3">
+                    </div><!--/.col-md-4 -->
+        
+                    <div class="col-md-5">
                         <div class="section-heading-2">
                             <h3 class="section-title">
-                                <span>FLICKR STREAM</span>
+                                <span>Prestasi Santri Dar Aswaja</span>
                             </h3>
                         </div>
                         
                         <div class="flickr-widget">
                             <ul class="flickr-list">
                                 <li>
-                                    <a href="asset/images/portfolio/img1.jpg" data-lightbox="picture-1">
-                                        <img src="asset/images/portfolio/img1.jpg" alt="" class="img-responsive">
+                                    <a href="asset/images/prestasi pondok/piagam1.jpg" data-lightbox="picture-1">
+                                        <img src="asset/images/prestasi pondok/piagam1,1.jpg" alt="" class="img-responsive">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="asset/images/portfolio/img2.jpg" data-lightbox="picture-2">
-                                        <img src="asset/images/portfolio/img2.jpg" alt="" class="img-responsive">
+                                    <a href="asset/images/prestasi pondok/piagam2.jpg" data-lightbox="picture-1">
+                                        <img src="asset/images/prestasi pondok/piagam2.jpg" alt="" class="img-responsive">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="asset/images/portfolio/img3.jpg" data-lightbox="picture-3">
-                                        <img src="asset/images/portfolio/img3.jpg" alt="" class="img-responsive">
+                                    <a href="asset/images/prestasi pondok/piagam3.jpg" data-lightbox="picture-1">
+                                        <img src="asset/images/prestasi pondok/piagam3.jpg" alt="" class="img-responsive">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="asset/images/portfolio/img4.jpg" data-lightbox="picture-4">
-                                        <img src="asset/images/portfolio/img4.jpg" alt="" class="img-responsive">
+                                    <a href="asset/images/prestasi pondok/imtihan3.jpg" data-lightbox="picture-1">
+                                        <img src="asset/images/prestasi pondok/imtihan3.jpg" alt="" class="img-responsive">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="asset/images/portfolio/img5.jpg" data-lightbox="picture-5">
-                                        <img src="asset/images/portfolio/img5.jpg" alt="" class="img-responsive">
+                                    <a href="asset/images/prestasi pondok/imtihan3putri.jpg" data-lightbox="picture-1">
+                                        <img src="asset/images/prestasi pondok/imtihan3putri.jpg" alt="" class="img-responsive">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="asset/images/portfolio/img6.jpg" data-lightbox="picture-6">
-                                        <img src="asset/images/portfolio/img6.jpg" alt="" class="img-responsive">
+                                    <a href="asset/images/prestasi pondok/imtihan2.jpg" data-lightbox="picture-1">
+                                        <img src="asset/images/prestasi pondok/imtihan2.jpg" alt="" class="img-responsive">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="asset/images/portfolio/img1.jpg" data-lightbox="picture-7">
-                                        <img src="asset/images/portfolio/img1.jpg" alt="" class="img-responsive">
+                                    <a href="asset/images/prestasi pondok/imtihan2putri.jpg" data-lightbox="picture-1">
+                                        <img src="asset/images/prestasi pondok/imtihan2putri.jpg" alt="" class="img-responsive">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="asset/images/portfolio/img2.jpg" data-lightbox="picture-8">
-                                        <img src="asset/images/portfolio/img2.jpg" alt="" class="img-responsive">
+                                    <a href="asset/images/prestasi pondok/imtihan1.jpg" data-lightbox="picture-1">
+                                        <img src="asset/images/prestasi pondok/imtihan1.jpg" alt="" class="img-responsive">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="asset/images/prestasi pondok/imtihan1putri.jpg" data-lightbox="picture-1">
+                                        <img src="asset/images/prestasi pondok/imtihan1putri.jpg" alt="" class="img-responsive">
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                    </div><!--/.col-md-3 -->
+                    </div><!--/.col-md-4 -->
+                    <div class="separator"></div><!-- Garis Pemisah -->
                 </div><!--/.row -->
             </div><!-- /.container -->
         </section>
         <!-- End Footer Section -->
         
-        
+        <!-- Button to scroll to the top -->
+        <a href="#" class="scroll-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+
         <!-- Start CCopyright Section -->
         <div id="copyright-section" class="copyright-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
                         <div class="copyright">
-                            Copyright © 2024. DAR ASWWAJA</a>
+                            Copyright © 2024. DAR ASWAJA</a>
                         </div>
                     </div>
                     
-                    <div class="col-md-5">
+                    <!-- <div class="col-md-5">
                         <div class="copyright-menu pull-right">
                             <ul>
                                 <li><a href="#" class="active">Home</a></li>
@@ -805,14 +1001,12 @@
                                 <li><a href="#">getbootstrap.com</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div><!--/.row -->
             </div><!-- /.container -->
         </div>
         <!-- End CCopyright Section -->
-        
-        
-        
+
        <!-- Sulfur JS File -->
         <script src="asset/js/jquery-2.1.3.min.js"></script>
         <script src="asset/js/jquery-migrate-1.2.1.min.js"></script>
